@@ -8,5 +8,8 @@ def login_usuario(nombre_usuario, clave):
     resultado = modelo_usuario.login_usuario(nombre_usuario, clave)
     return resultado
 
+def listar_usuarios():
+    return modelo_usuario.listar_usuarios()
+
 def crear_productor(nombre, apellido, nombre_usuario, clave, email, telefono, direccion):
     modelo_productor.crear_productor(nombre, apellido, nombre_usuario, clave, email, telefono, direccion)

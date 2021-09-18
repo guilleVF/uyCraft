@@ -32,6 +32,7 @@ try:
 
     con.execute("""CREATE TABLE articulo(
                 id_articulo INTEGER PRIMARY KEY AUTOINCREMENT,
+                titulo TEXT NOT NULL,
                 descripcion TEXT,
                 tiempo_entrega TEXT,
                 rating REAL DEFAULT 1,

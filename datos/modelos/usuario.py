@@ -18,5 +18,11 @@ def login_usuario(nombre_usuario, clave):
     resultado = bd.ejecutar_sql(login_usuario_sql)
     return resultado
 
+def listar_usuarios():
+
+    listar_usuarios_sql = f""" SELECT * FROM usuario
+                            """
+    bd = BaseDeDatos()
+    return bd.ejecutar_sql(listar_usuarios_sql)
 
 
